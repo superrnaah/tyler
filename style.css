@@ -17,29 +17,41 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:darkred;
-    mix-blend-mode: hue;
+    width: 100vw;
+    height: 100vh;
+    background-color:blue;
+    mix-blend-mode:soft-light;
+    z-index: 1;
+    opacity: .3;
 }
 
-.showcase {
-    text-align: center;
+.overlay-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image:url(overlay.jpg);
+    background-size: cover;
+    opacity: .2;
 }
+
 
   .showcase video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     opacity: .3;
 }
 
 .cta {
+    padding-left: 2em;
+    padding-right: 2em;
     position: relative;
-    top: 25em;
+    top: 20em;
     z-index: 1;
 }
 
@@ -48,6 +60,7 @@ body {
     color: aliceblue;
     font-size: clamp(4rem, 4.5vw, 10em);
     text-transform: uppercase;
+    letter-spacing: 25px;
 }
 
 .cta p {
@@ -55,6 +68,7 @@ body {
     font-size: clamp(3rem, 3.5vw, 6em);
     color: #4AF9DC;
     text-transform: uppercase;
+    letter-spacing: 15px;
 }
 
 .social {
@@ -64,12 +78,22 @@ body {
     z-index: 2;
     color: aliceblue;
     font-size: 75px;
-    top: 6em;
+    top: 5em;
     word-spacing: .5em;
+    transition: .2s;
 }
+
+.social-icons {
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: clamp(2rem, 3.5vw, 6em);
+    transition: all;
+}
+
 
 .fb {
     color: #3B5998;
+    
 }
 
 .yt {
@@ -81,5 +105,22 @@ body {
 }
 
 .music {
-    color: #000;
+    color: #fff;
+}
+
+.fb:hover {
+    transform: scale(1.1);
+    
+}
+
+.yt:hover {
+    transform: scale(1.1);
+}
+
+.ig:hover {
+    transform: scale(1.1);
+}
+
+.music:hover {
+    transform: scale(1.1);
 }
