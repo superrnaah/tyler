@@ -19,7 +19,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color:blue;
+    background-color:#BB0000;
     mix-blend-mode:soft-light;
     z-index: 1;
     opacity: .3;
@@ -48,28 +48,36 @@ body {
 }
 
 .cta {
-    padding-left: 2em;
-    padding-right: 2em;
     position: relative;
     top: 20em;
+    margin: 0 auto;
     z-index: 1;
+    animation: fadeIn 5s;
+    background-color:rgba(0, 0, 0, 0.5);
+    max-width: 1900px;
+    border-radius: 25px;
 }
 
 .cta h2 {
     text-align: center;
     color: aliceblue;
-    font-size: clamp(4rem, 4.5vw, 10em);
+    font-size: clamp(2rem, 5.5vw, 10em);
     text-transform: uppercase;
     letter-spacing: 25px;
 }
 
 .cta p {
     text-align: center;
-    font-size: clamp(3rem, 3.5vw, 6em);
+    font-size: clamp(1.5rem, 4.5vw, 6em);
     color: #4AF9DC;
     text-transform: uppercase;
     letter-spacing: 15px;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .social {
     position: relative;
@@ -84,10 +92,12 @@ body {
 }
 
 .social-icons {
-    padding-left: 2em;
-    padding-right: 2em;
-    font-size: clamp(2rem, 3.5vw, 6em);
+    padding: .2em;
+    font-size: clamp(2.4rem, 3.5vw, 6em);
     transition: all;
+    animation: fadeIn 5s;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
 }
 
 
