@@ -37,6 +37,10 @@ body {
 }
 
 
+.showcase {
+    height: 100vh;
+}
+
   .showcase video {
     position: absolute;
     top: 0;
@@ -54,7 +58,7 @@ body {
     z-index: 1;
     animation: fadeIn 5s;
     background-color:rgba(0, 0, 0, 0.5);
-    max-width: 1900px;
+    max-width: 1600px;
     border-radius: 25px;
 }
 
@@ -63,7 +67,7 @@ body {
     color: aliceblue;
     font-size: clamp(2rem, 5.5vw, 10em);
     text-transform: uppercase;
-    letter-spacing: 25px;
+    letter-spacing: clamp(.1em,3.5vw,.2em);
 }
 
 .cta p {
@@ -83,21 +87,17 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    z-index: 2;
-    color: aliceblue;
-    font-size: 75px;
-    top: 5em;
-    word-spacing: .5em;
+    z-index: 1;
+    top: 22em;
     transition: .2s;
 }
 
 .social-icons {
     padding: .2em;
-    font-size: clamp(2.4rem, 3.5vw, 6em);
+    font-size: clamp(2.4rem, 3.5vw, 4em);
     transition: all;
     animation: fadeIn 5s;
-    background-color:rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
+    word-spacing: clamp(.1em,1em,.5em);
 }
 
 
@@ -133,4 +133,39 @@ body {
 
 .music:hover {
     transform: scale(1.1);
+}
+
+
+.video-showcase {
+    position: relative;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.yt-title {
+    position: relative;
+    top: 4em;
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+    font-size: 3em;
+    
+}
+
+.yt-h1 {
+    color: #4AF9DC;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: clamp(.1em,3.5vw,.2em);
+}
+
+.yt-video {
+    position: relative;
+    top: 25em;
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+    background-color: #125688;
+    padding: 50px 0;
 }
