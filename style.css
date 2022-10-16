@@ -57,10 +57,10 @@ body {
     padding: 1em;
     top: 20em;
     z-index: 1;
-    animation: fadeIn 5s;
-    background-color:rgba(0, 0, 0, 0.5);
-    max-width: 75%;
+    background-color:rgba(0, 0, 0, 0.3);
+    max-width: 65%;
     border-radius: 25px;
+    backdrop-filter: blur(12px);
 
 }
 
@@ -178,4 +178,4 @@ body {
 iframe { 
     width: clamp(400px, 50%, 860px);
     height: 615px;
-}
+}   
