@@ -6,25 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Metalheads Unite">
     <meta property="og:image" content="https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/293766586_5636288179723402_2909272128050512636_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=YgHlm-YKWBUAX9tVHTi&tn=DCwMdmTnA_a8GB48&_nc_ht=scontent-lax3-1.xx&oh=00_AT85Re_rN8OTnMGyGtcthp1HXsRfkdQQEcjSHKWyLKMeFA&oe=634F34FB" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/d457a78b4f.js" crossorigin="anonymous"></script>
     <title>Tyler Hacker Industries</title>
 </head>
 <body>
+    
+
     <section class="showcase">
     <div class="overlay"></div>
     <div class="overlay-img"></div>
-    <video src="pbj-hero.mp4" loop muted autoplay playsinline></video>
+    <div class="photo"></div>
+
     <div class="cta">
         <h2>Tyler Hacker</h2>
-        <p>heavy - epic - melodic</p>
     </div>
+
     <div class="social">
         <ul class="social-icons">
             <a href="https://www.facebook.com/tyler.hacker.90"><i class="fa-brands fa-facebook fb"></i></a>
             <a href="https://www.youtube.com/c/TylerHackerMusic"><i class="fa-brands fa-youtube yt"></i></a>
-            <a href="https://www.instagram.com/tyler_hacker_90/?hl=en"><i class="fa-brands fa-square-instagram ig"></i></a>
+            <a href="https://www.instagram.com/tyler_hacker_90/?hl=en"><i class="fa-brands fa-instagram ig"></i></a>
            <a href="https://songwhip.com/tylerhacker"><i class="fa-solid fa-music music"></i></a>
         </ul>
     </div>
@@ -39,9 +46,14 @@
     <div class="yt-title">
         <h1 class="yt-h1">Latest content</h1>
     </div>
-    <div class="yt-video">
-    <iframe  src="https://www.youtube.com/embed/OZZVMojxiyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+
+    <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=OZZVMojxiyA" data-height="200px" data-width="400px">
+        <i class="fa-solid fa-play playb"></i>
+        <img class="fbox" src="tyler-showcase.png" width="200" height="150" />
+      </a>
+
+
+      
 </section>
 </body>
-</html>
+
