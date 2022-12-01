@@ -14,12 +14,6 @@ html {
 
 body {
     overflow-x: hidden;
-    background-color: #125688;
-    background-image: url(dark-bg.jpg);
-    background-blend-mode: hard-light;
-    background-position: 25% 1%;
-    background-repeat: no-repeat;
-    object-fit:contain;
   }
 
 
@@ -231,7 +225,12 @@ a:visited {
 /*/////////////////////////// end down arrow ////////////////////////////////*/
 
 .video-showcase {
+  background-color: #125688;
+  background-image: url(dark-bg.jpg);
   background-blend-mode: hard-light;
+  background-position: 15% 35%;
+  background-repeat: no-repeat;
+  object-fit: cover;
 }
 
 
