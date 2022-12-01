@@ -16,8 +16,8 @@ body {
     overflow-x: hidden;
     background-color: #125688;
     background-image: url(dark-bg.jpg);
-    background-blend-mode:hard-light;
-    background-position: 25% 55%;
+    background-blend-mode: hard-light;
+    background-position: 25% 1%;
     background-repeat: no-repeat;
     object-fit:contain;
   }
@@ -229,6 +229,11 @@ a:visited {
 /*/////////////////////////// end down arrow ////////////////////////////////*/
 /*/////////////////////////// end down arrow ////////////////////////////////*/
 /*/////////////////////////// end down arrow ////////////////////////////////*/
+
+.video-showcase {
+  background-blend-mode: hard-light;
+}
+
 
 .fbox {
   pointer-events: none;
