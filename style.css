@@ -93,6 +93,11 @@ body {
     word-spacing: clamp(.1em,1em,.5em);
 }
 
+
+.social-icons a {
+  color: #fff;
+}
+
 a:visited {
   color: #fff;
 }
@@ -264,7 +269,7 @@ a:visited {
 }
 
 img {
-  height: 100vh;
+  min-height: 100%;
   width: 100vw;
   opacity: .5;
 }
