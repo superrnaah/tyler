@@ -229,6 +229,27 @@ a:visited {
 /*/////////////////////////// end down arrow ////////////////////////////////*/
 /*/////////////////////////// end down arrow ////////////////////////////////*/
 
+.play-grid {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  position: absolute;
+  margin-bottom: 40em;
+  z-index: 1000;
+  color: aliceblue;
+  text-align: center;
+}
+
+.title h1 {
+  font-family: 'Metal Mania';
+  letter-spacing: 15px;
+  font-size: clamp(1.5rem, 6.2vw, 5.5em);
+}
+
 .video-showcase {
   background-color: #125688;
   background-image: url(dark-bg.jpg);
@@ -246,13 +267,9 @@ a:visited {
 
 .playbutton {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
   pointer-events: none;
   cursor: default;
+  z-index: 1000;
 }
 
 .playb {
@@ -289,6 +306,10 @@ img {
     word-spacing: .5em;
     font-size: clamp(2.5rem, 6.2vw, 5.5em);
     text-align: center;
+}
+
+.BIT {
+letter-spacing: 5px;
 }
 
 @media(max-width: 1095px) {
